@@ -1,13 +1,11 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html,
@@ -17,15 +15,9 @@ body {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -36,28 +28,19 @@ body {
 
 .container {
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
+  transform: translateY(25%);
 }
 
 .digits {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   margin: 0 10px;
 }
 
 .digit {
-  -webkit-box-shadow: 0.25em 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), -0.25em -0.25em 0.5em 0 rgba(255, 255, 255, 0.25);
-          box-shadow: 0.25em 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), -0.25em -0.25em 0.5em 0 rgba(255, 255, 255, 0.25);
-  -webkit-transition: all 0.25s ease-in-out;
+  box-shadow: 0.25em 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), -0.25em -0.25em 0.5em 0 rgba(255, 255, 255, 0.25);
   transition: all 0.25s ease-in-out;
   width: 50px;
   margin: 0 5px;
@@ -70,17 +53,10 @@ body {
   border-radius: 1.5em;
   position: relative;
 }
-
 .digit .num {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   text-align: center;
   width: 40px;
@@ -88,9 +64,7 @@ body {
   position: relative;
   z-index: 1;
 }
-
 .digit .marker {
-  -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   background-color: #212121;
   border-radius: 50%;
@@ -101,4 +75,9 @@ body {
   left: 5px;
   z-index: 0;
 }
-/*# sourceMappingURL=style.css.map */
+
+.colorpicker {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}/*# sourceMappingURL=style.css.map */

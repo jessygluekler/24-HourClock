@@ -1,13 +1,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <title>24-Hour Clock</title>
-
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
+    <div class="colorpicker">
+        <input type="color" id="background-color"  value="#161618">
+        <input type="color" id="digit-color"  value="#888888">
+        <input type="color" id="marker-color"  value="#212121">
+    </div>
+
     <main class="container">
         <section class="digits digits--hours">
             <div class="digit digit--tens">
@@ -38,5 +41,6 @@
     </main>
 
     <script src="js/main.js"></script>
+    <script src="js/colorpicker.js"></script>
 </body>
 </html>
